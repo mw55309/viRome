@@ -437,7 +437,9 @@ pwm.heatmap <- function(pwm=NULL, col.fun=colorRampPalette(c("black","red"), spa
 
 	# add axes
 	axis(side=1, at=1:ncol(pwm), labels=colnames(pwm), cex.axis=cex.axis)
-}read.bam <- function (bamfile = NULL, chr = NULL, start = 1, end = 1e+07, 
+}
+
+read.bam <- function (bamfile = NULL, chr = NULL, start = 1, end = 1e+07, 
     what = c("qname", "flag", "rname", "strand", "pos", "qwidth", 
         "mapq", "cigar", "mrnm", "mpos", "isize", "seq"), tag = c("NM"), 
     removeN = TRUE) 
@@ -509,7 +511,10 @@ pwm.heatmap <- function(pwm=NULL, col.fun=colorRampPalette(c("black","red"), spa
 	} else {
 		do.call(c, x)
 	}
-}read.dist.plot <- function (sr = NULL, minlen = 1, maxlen = 37, method = "add", pad = 30, primary = "pos", plot=TRUE, title="5' read distance plot", xlab="Distance", ylab="Count") {
+}
+		  
+		  
+read.dist.plot <- function (sr = NULL, minlen = 1, maxlen = 37, method = "add", pad = 30, primary = "pos", plot=TRUE, title="5' read distance plot", xlab="Distance", ylab="Count") {
 
     # check the input paramters
     # check method argument is valid
@@ -813,7 +818,9 @@ stacked.barplot <- function(dm=NULL, minlen=1, maxlen=37, start=1, end=1e+07, in
 	# close the screens
 	close.screen(all=TRUE)
 
-}summarise.by.length <- function(vdf=NULL, minlen=1, maxlen=37, start=1, end=1e+07, strand=NULL) {
+}
+		  
+summarise.by.length <- function(vdf=NULL, minlen=1, maxlen=37, start=1, end=1e+07, strand=NULL) {
 
 	# sort out end which has been given
 	# a silly high default number so as not to miss
