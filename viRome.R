@@ -1,3 +1,9 @@
+library("Rsamtools")
+library("plyr")
+library("gsubfn")
+library("seqinr")
+library("reshape2")
+
 barplot.bam <- function(vdf=NULL, minlen=1, maxlen=37, poscol="red", negcol="green", main="Sequence length distribution",
 				xlab="Map length", ylab="Count", legend=c("+ve strand","-ve strand"), legendx=NULL, legendy=NULL, plot=TRUE, down=FALSE, sym.axes=TRUE, ...) {
 
